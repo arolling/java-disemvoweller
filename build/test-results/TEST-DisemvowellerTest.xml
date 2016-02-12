@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DisemvowellerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-02-12T16:47:54" hostname="epicodus-55.local" time="0.013">
+<testsuite name="DisemvowellerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-02-12T17:20:18" hostname="epicodus-55.local" time="0.383">
   <properties/>
-  <testcase name="removeVowels_VowellessWordWillBeReturnedAsIs_returnsRhythm" classname="DisemvowellerTest" time="0.002"/>
-  <testcase name="removeVowels_removesVowelsFromAPhrase_returnsMryHdLttlLmb" classname="DisemvowellerTest" time="0.001"/>
-  <testcase name="removeVowels_removesVowelsFromASingleWord_returnsSBSTS" classname="DisemvowellerTest" time="0.001"/>
+  <testcase name="resultPhraseTest" classname="DisemvowellerTest" time="0.33"/>
+  <testcase name="resultTest" classname="DisemvowellerTest" time="0.022"/>
+  <testcase name="rootTest" classname="DisemvowellerTest" time="0.009"/>
+  <testcase name="removeVowels_VowellessWordWillBeReturnedAsIs_returnsRhythm" classname="DisemvowellerTest" time="0.001"/>
+  <testcase name="removeVowels_removesVowelsFromAPhrase_returnsMryHdLttlLmb" classname="DisemvowellerTest" time="0.0"/>
+  <testcase name="removeVowels_removesVowelsFromASingleWord_returnsSBSTS" classname="DisemvowellerTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[[Thread-4] INFO spark.webserver.SparkServer - == Spark has ignited ...
+[Thread-4] INFO spark.webserver.SparkServer - >> Listening on 0.0.0.0:4567
+[Thread-4] INFO org.eclipse.jetty.server.Server - jetty-9.0.2.v20130417
+[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@4fbb187c{HTTP/1.1}{0.0.0.0:4567}
+[Test worker] INFO spark.webserver.SparkServer - >>> Spark shutting down ...
+[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@37acb0df by 
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@4fbb187c{HTTP/1.1}{0.0.0.0:4567}
+[Test worker] INFO spark.webserver.SparkServer - done
+]]></system-err>
 </testsuite>
