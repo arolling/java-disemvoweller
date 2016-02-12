@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DisemvowellerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-02-12T16:20:53" hostname="epicodus-55.local" time="0.002">
+<testsuite name="DisemvowellerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-02-12T16:47:54" hostname="epicodus-55.local" time="0.013">
   <properties/>
   <testcase name="removeVowels_VowellessWordWillBeReturnedAsIs_returnsRhythm" classname="DisemvowellerTest" time="0.002"/>
+  <testcase name="removeVowels_removesVowelsFromAPhrase_returnsMryHdLttlLmb" classname="DisemvowellerTest" time="0.001"/>
+  <testcase name="removeVowels_removesVowelsFromASingleWord_returnsSBSTS" classname="DisemvowellerTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

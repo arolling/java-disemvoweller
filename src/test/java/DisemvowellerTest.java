@@ -26,6 +26,16 @@ public class DisemvowellerTest extends FluentTest {
     assertEquals("Rhythm", Disemvoweller.removeVowels("Rhythm"));
   }
 
+  @Test
+  public void removeVowels_removesVowelsFromASingleWord_returnsSBSTS() {
+    assertEquals("-sb-st-s", Disemvoweller.removeVowels("Asbestos"));
+  }
+
+  @Test
+  public void removeVowels_removesVowelsFromAPhrase_returnsMryHdLttlLmb() {
+    assertEquals("M-ry h-d - l-ttl- l-mb.", Disemvoweller.removeVowels("Mary had a little lamb."));
+  }
+
   //Integration testing
   // @Test
   // public void rootTest() {
