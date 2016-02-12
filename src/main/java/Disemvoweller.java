@@ -22,15 +22,24 @@ public class Disemvoweller {
 
       String phraseInput = request.queryParams("phraseInput");
       String vowellessPhrase = Disemvoweller.removeVowels(phraseInput);
+      String guessInput = request.queryParams("guessInput");
+      Boolean accurate = phraseInput.equals(guessInput);
 
       model.put("vowellessPhrase", vowellessPhrase);
+      model.put("phraseInput", phraseInput);
       model.put("template", "templates/wordpuzzle.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
     get("/wordpuzzleguess", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
+      String phrasePersist = request.queryParams("phrasePersist");
+      String guessInput = request.queryParams("guessInput");
+      Boolean accurate = phrasePersist.equals(guessInput);
 
+      model.put("accurate", accurate);
+      model.put("guessPhrase", guessInput);
+      model.put("phraseInput", phrasePersist);
       model.put("template", "templates/wordpuzzleguess.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());

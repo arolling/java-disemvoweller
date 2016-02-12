@@ -58,4 +58,13 @@ public class DisemvowellerTest extends FluentTest {
     submit("#submitBtn");
     assertThat(pageSource()).contains("B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt");
   }
+  @Test
+  public void guessPhraseTest() {
+    goTo("http://localhost:4567/");
+    fill("#phraseInput").with("Believe you can and you're halfway there. Theodore Roosevelt");
+    submit("#submitBtn");
+    fill("#guessInput").with("Believe you can and you're halfway there. Theodore Roosevelt");
+    submit("#guessBtn");
+    assertThat(pageSource()).contains("is correct!");
+  }
 }
