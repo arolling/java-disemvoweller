@@ -21,6 +21,11 @@ public class DisemvowellerTest extends FluentTest {
   public static ServerRule server = new ServerRule();
   // Unit testing
 
+  @Test
+  public void removeVowels_VowellessWordWillBeReturnedAsIs_returnsRhythm() {
+    assertEquals("Rhythm", Disemvoweller.removeVowels("Rhythm"));
+  }
+
   //Integration testing
   // @Test
   // public void rootTest() {
