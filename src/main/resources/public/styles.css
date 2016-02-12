@@ -1,3 +1,26 @@
 .hideme {
   display: none;
 }
+
+.panel-body {
+  background-color: #ffabab;
+  color: #379452;
+}
+
+.btn {
+  background-color: #b25454;
+  color: #91ffb1;
+}
+
+.jumbotron {
+  background-color: #379452;
+  color: #ffabab;
+}
+
+.panel-heading {
+  background-color: #ff9291;
+}
+
+.well {
+  background-color: #ffabab;
+}

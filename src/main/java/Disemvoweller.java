@@ -22,9 +22,7 @@ public class Disemvoweller {
 
       String phraseInput = request.queryParams("phraseInput");
       String vowellessPhrase = Disemvoweller.removeVowels(phraseInput);
-      String guessInput = request.queryParams("guessInput");
-      Boolean accurate = phraseInput.equals(guessInput);
-
+    
       model.put("vowellessPhrase", vowellessPhrase);
       model.put("phraseInput", phraseInput);
       model.put("template", "templates/wordpuzzle.vtl");
